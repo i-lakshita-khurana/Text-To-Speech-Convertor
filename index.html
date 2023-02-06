@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+      Text To Speech Convertor
+   </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <video id='videoBG' poster="poster.png" autoplay muted loop>
+      <source src="ink.mp4" type="video/mp4">
+   </video>
+   <div class="sp-container">
+      <div class="sp-content">
+         <div class="sp-globe"></div>
+         <h2 class="frame-1">Chandigarh Group of Colleges</h2>
+         <h2 class="frame-2">Presents</h2>
+         <h2 class="frame-3">2020-21 Project</h2>
+         <h2 class="frame-4">Let's Test It!</h2>
+         <h2 class="frame-5">
+            <span>Text</span>
+            <span>To</span>
+            <span>Speech</span>
+         </h2>
+         <a class="sp-circle-link" href="main.html">Click</a>
+      </div>
+   </div>
+   <audio id="myAudio" controls autoplay loop style="height: 0px; width: 0px;">
+      <source src="music.mp3" type="audio/mpeg">
+   </audio>
+   <script>
+      document.getElementById("myAudio").currentTime = 5;
+      var vid = document.getElementById("myAudio");
+      vid.volume = 0.1;
+   </script>
+</body>
+</html>
